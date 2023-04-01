@@ -1,3 +1,3 @@
-export interface PostByIdReq {
+export interface PostById {
   id: number
 }

@@ -1,8 +1,8 @@
 import webAPI from '../webAPI';
-import { PostByIdReq } from "./types";
+import { PostById } from './types';
 
 export class PostService {
-  posts = () => webAPI.get(`/posts`);
+  posts = () => webAPI.get('/posts');
 
-  postsById = (params: PostByIdReq) => webAPI.get(`/posts/${params}`);
+  postsById = (params: PostById) => webAPI.get(`/posts/${params}`);
 }

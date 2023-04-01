@@ -1,4 +1,4 @@
-import { PostService } from "./posts";
+import { PostService } from './posts';
 
 export const api = {
   posts: new PostService(),
