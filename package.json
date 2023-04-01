@@ -2,11 +2,16 @@
   "name": "master_next",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Jeeva B",
+    "email": "jeevasubash64@gmail.com"
+  },
+  "description": "",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3600",
     "build": "npx tailwindcss -o build.css --minify && next build",
     "postbuild": "next-sitemap --config sitemap.config.js",
-    "start": "next start",
+    "start": "next start -p 3600",
     "lint": "next lint",
     "lintFix": "eslint . --fix"
   },
