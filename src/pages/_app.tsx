@@ -1,6 +1,11 @@
-import '~/styles/globals.css'
+import { memo } from 'react'
 import type { AppProps } from 'next/app'
+import { Provider } from 'react-redux'
+import { store } from '~/state/store'
+import '~/styles/globals.css'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }: AppProps) => {
+  return <Provider store={store}><Component {...pageProps} /></Provider>
 }
+
+export default memo(App);
